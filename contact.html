@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact Us Meat House</title>
+    <title data-i18n="titleContact">Contact Us || Boskery || HTML Template For Butcher & Meat</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/word_mark_logo_2_small.svg"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/word_mark_logo_2_small.svg"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/word_mark_logo_2_small.svg"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png"/>
     <link rel="manifest" href="assets/images/favicons/site.webmanifest"/>
     <meta name="description"
-          content="MeatHouse  raw meat shop, vegetable shop and all other meat shops."/>
+          content="Boskery is a modern butcher & meat shop HTML5 Template. We specially build this template for all food and meat online store. It is also perfect for the meat shop, chicken shop, mutton shop, fish, sea food, butcher steak house, raw meat shop, vegetable shop and all other meat shops."/>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,6 +39,34 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/boskery.css"/>
+
+    <!-- Language Switcher Styles -->
+    <style>
+        .lang-switcher {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .lang-switcher button {
+            padding: 5px 12px;
+            border: 1px solid #ddd;
+            background: transparent;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .lang-switcher button.active {
+            background: #d4302d;
+            color: white;
+            border-color: #d4302d;
+        }
+        .lang-switcher button:hover {
+            background: #d4302d;
+            color: white;
+            border-color: #d4302d;
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -48,7 +76,7 @@
 
 
 <div class="preloader">
-    <div class="preloader__image" style="background-image: url(assets/images/word_mark_logo_2.svg);"></div>
+    <div class="preloader__image" style="background-image: url(assets/images/word_mark_logo_2_small.svg);"></div>
 </div>
 <!-- /.preloader -->
 <div class="page-wrapper">
@@ -67,17 +95,17 @@
                                 <ul class="main-menu__list">
 
                                     <li class="dropdown megamenu">
-                                        <a href="index.html">Home</a>
+                                        <a href="index.html" data-i18n="home">Home</a>
                                     </li>
 
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="about.html" data-i18n="aboutUs">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact Us</a>
+                                        <a href="contact.html" data-i18n="contactUs">Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="gallery-carousel.html">Gallery</a>
+                                        <a href="gallery-carousel.html" data-i18n="gallery">Gallery</a>
                                     </li>
                                 </ul>
                             </nav><!-- /.main-header__nav -->
@@ -88,10 +116,20 @@
                                 <span></span>
                                 <span></span>
                             </div><!-- /.mobile-nav__toggler -->
+                            <div class="lang-switcher">
+                                <button id="langBtnEn" class="active">EN</button>
+                                <button id="langBtnUz">UZ</button>
+
+                                <br>
+                                <br>
+                            </div><!-- /.lang-switcher -->
+
                             <div class="main-header__call">
+                                <br>
+
                                 <span class="main-header__call__icon icon-mobile"></span>
                                 <div class="main-header__call__inner">
-                                    <span class="main-header__call__tagline">Call Anytime</span>
+                                    <span class="main-header__call__tagline" data-i18n="callAnytime">Call Anytime</span>
                                     <a href="tel:+821082686556" class="main-header__call__number">+821082686556</a>
                                     <!-- /.main-header__call__number -->
                                 </div><!-- /.main-header__call__inner -->
@@ -105,7 +143,7 @@
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
-                                <span class="boskery-btn__text">Download Now</span>
+                                <span class="boskery-btn__text" data-i18n="downloadNow">Download Now</span>
                                 <i class="icon-meat-3"></i>
                             </a><!-- /.thm-btn main-header__btn -->
                         </div><!-- /.main-header__right__right -->
@@ -119,10 +157,10 @@
         <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);"></div>
         <!-- /.page-header__bg -->
         <div class="container">
-            <h2 class="page-header__title">Contact Us</h2>
+            <h2 class="page-header__title" data-i18n="contactPageTitle">Contact Us</h2>
             <ul class="boskery-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><span>Contact Us</span></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><span data-i18n="contactPageTitle">Contact Us</span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
         </div><!-- /.container -->
     </section><!-- /.page-header -->
@@ -132,8 +170,8 @@
             <div class="contact-page__wrapper">
                 <div class="contact-page__content">
                     <div class="contact-page__sec-title">
-                        <h2 class="contact-page__title">Get In Touch</h2><!-- /.contact-page__title -->
-                        <p class="contact-page__text">We would love to hear from you. Please fill out the form
+                        <h2 class="contact-page__title" data-i18n="getInTouch">Get In Touch</h2><!-- /.contact-page__title -->
+                        <p class="contact-page__text" data-i18n="getInTouchText">We would love to hear from you. Please fill out the form
                             below.</p>
                         <!-- /.contact-page__text -->
                     </div><!-- /.contact-page__sec-title -->
@@ -142,15 +180,15 @@
                         <div class="form-one__group">
                             <div class="form-one__control wow fadeInUp" data-wow-duration="1500ms"
                                  data-wow-delay="00ms">
-                                <input type="text" name="name" placeholder="Your Name">
+                                <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="yourName">
                             </div><!-- /.form-one__control -->
                             <div class="form-one__control wow fadeInUp" data-wow-duration="1500ms"
                                  data-wow-delay="50ms">
-                                <input type="email" name="email" placeholder="Your Email">
+                                <input type="email" name="email" placeholder="Your Email" data-i18n-placeholder="yourEmail">
                             </div><!-- /.form-one__control -->
                             <div class="form-one__control form-one__control--full wow fadeInUp"
                                  data-wow-duration="1500ms" data-wow-delay="100ms">
-                                <textarea name="message" placeholder="Write Message . ."></textarea>
+                                <textarea name="message" placeholder="Write Message . ." data-i18n-placeholder="writeMessage"></textarea>
                             </div><!-- /.form-one__control -->
                             <div class="form-one__control form-one__control--full wow fadeInUp"
                                  data-wow-duration="1500ms" data-wow-delay="150ms">
@@ -161,7 +199,7 @@
                                     <span class="boskery-btn__hover"></span>
                                     <span class="boskery-btn__hover"></span>
                                     <span class="boskery-btn__hover"></span>
-                                    <span class="boskery-btn__text">send message</span>
+                                    <span class="boskery-btn__text" data-i18n="sendMessage">send message</span>
                                     <i class="icon-meat-3"></i>
                                 </button>
                             </div><!-- /.form-one__control -->
@@ -188,9 +226,9 @@
                         <!-- /.contact-info__contact__bg -->
                         <div class="contact-info__contact__content">
                             <div class="contact-info__top">
-                                <h4 class="contact-info__title">You’re always welcome to visit us</h4>
+                                <h4 class="contact-info__title" data-i18n="welcomeToVisit">You’re always welcome to visit us</h4>
                                 <!-- /.contact-info__title -->
-                                <p class="contact-info__text">Our friendly staff will be happy to assist you with any
+                                <p class="contact-info__text" data-i18n="staffHappy">Our friendly staff will be happy to assist you with any
                                     questions or concerns you may have.</p><!-- /.contact-info__text -->
                             </div><!-- /.contact-info__top -->
                             <div class="contact-info__contact-list">
@@ -198,7 +236,7 @@
                                     <span class="contact-info__contact-list__icon icon-phone-call"></span>
                                     <!-- /.contact-info__contact-list__icon -->
                                     <div class="contact-info__contact-list__content">
-                                        <span class="contact-info__contact-list__title">call now</span>
+                                        <span class="contact-info__contact-list__title" data-i18n="callNow">call now</span>
                                         <!-- /.contact-info__contact-list__title -->
                                         <a href="tel:++821082686556" class="contact-info__contact-list__link">+821082686556</a>
                                         <!-- /.contact-info__contact-list__link -->
@@ -208,7 +246,7 @@
                                     <span class="contact-info__contact-list__icon icon-paper-plane"></span>
                                     <!-- /.contact-info__contact-list__icon -->
                                     <div class="contact-info__contact-list__content">
-                                        <span class="contact-info__contact-list__title">Telegram</span>
+                                        <span class="contact-info__contact-list__title" data-i18n="telegram">Telegram</span>
                                         <!-- /.contact-info__contact-list__title -->
                                         <a href="t.me/meat_housekr"
                                            class="contact-info__contact-list__link">Telegram</a>
@@ -219,7 +257,7 @@
                                     <span class="contact-info__contact-list__icon icon-maps-and-flags"></span>
                                     <!-- /.contact-info__contact-list__icon -->
                                     <div class="contact-info__contact-list__content">
-                                        <span class="contact-info__contact-list__title">address</span>
+                                        <span class="contact-info__contact-list__title" data-i18n="address">address</span>
                                         <!-- /.contact-info__contact-list__title -->
                                         <a href="https://maps.app.goo.gl/rg6e773HsY1RyFVW7"
                                            class="contact-info__contact-list__link">WR79+Q8M Gyeongsan-si,
@@ -238,9 +276,9 @@
                         <!-- /.contact-info__business-hours__bg -->
                         <div class="contact-info__business-hours__content">
                             <div class="contact-info__top contact-info__top--business-hours">
-                                <h4 class="contact-info__title contact-info__title--business-hours">Our business
+                                <h4 class="contact-info__title contact-info__title--business-hours" data-i18n="businessHours">Our business
                                     hours</h4><!-- /.contact-info__title -->
-                                <p class="contact-info__text contact-info__text--business-hours">Our friendly staff will
+                                <p class="contact-info__text contact-info__text--business-hours" data-i18n="staffHappy">Our friendly staff will
                                     be happy to assist you with any questions or concerns you may have.</p>
                                 <!-- /.contact-info__text -->
                             </div><!-- /.contact-info__top -->
@@ -248,49 +286,49 @@
                                 <table class="table contact-info__business-hours__table">
                                     <tbody>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Monday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="monday">Monday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Tuesday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="tuesday">Tuesday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Wednesday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="wednesday">Wednesday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Thursday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="thursday">Thursday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Friday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="friday">Friday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Saturday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="saturday">Saturday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
                                         <td class="table__right-data">10:00AM - 10:00PM</td>
                                     </tr>
                                     <tr>
-                                        <td class="table__left-data"><i class="icon-check"></i>Sunday</td>
+                                        <td class="table__left-data"><i class="icon-check"></i><span data-i18n="sunday">Sunday</span></td>
                                         <td class="table__border">
                                             <div class="table__border__line"></div><!-- /.table__border -->
                                         </td>
@@ -333,7 +371,7 @@
                 <div class="row gutter-y-50">
                     <div class="col-lg-5 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
                         <div class="footer-widget footer-widget--about">
-                            <h2 class="footer-widget__title">Providing fresh and organic meat from our farm in a very
+                            <h2 class="footer-widget__title" data-i18n="footerAboutText">Providing fresh and organic meat from our farm in a very
                                 hygienic way.</h2><!-- /.footer-widget__title -->
                             <a href="contact.html" class="boskery-btn">
                                 <span class="boskery-btn__hover"></span>
@@ -342,7 +380,7 @@
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
-                                <span class="boskery-btn__text">Contact Us</span>
+                                <span class="boskery-btn__text" data-i18n="contactUs">Contact Us</span>
                                 <i class="icon-meat-3"></i>
                             </a><!-- /.boskery-btn -->
                         </div><!-- /.footer-widget -->
@@ -351,17 +389,17 @@
                          data-wow-delay="200ms">
                         <div class="footer-widget footer-widget--links">
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="t.me/meat_housekr">Telegram</a></li>
-                                <li><a href="https://play.google.com/store/app/details?id=com.saikou.meathouse">Play
+                                <li><a href="t.me/meat_housekr" data-i18n="telegram">Telegram</a></li>
+                                <li><a href="https://play.google.com/store/app/details?id=com.saikou.meathouse" data-i18n="playStore">Play
                                     Store</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-lg-3 col-md-3 col-xl-2 -->
                     <div class="col-lg-4 col-md-5 col-xl-4 wow fadeInUp" data-wow-duration="1500ms"
                          data-wow-delay="400ms">
                         <div class="footer-widget footer-widget--contact">
-                            <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title" data-i18n="contactHeading">Contact</h2><!-- /.footer-widget__title -->
                             <div class="footer-widget__contact">
                                 <address class="footer-widget__address">경북 경산시 하양읍 금송로 12</address>
                                 <!-- /.footer-widget__address -->
@@ -389,7 +427,7 @@
                     <div class="col-lg-5 col-md-4 col-sm-8 col-xl-3 wow fadeInUp" data-wow-duration="1500ms"
                          data-wow-delay="600ms">
                         <div class="footer-widget footer-widget--gallery">
-                            <h2 class="footer-widget__title">Gallery</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title" data-i18n="galleryHeading">Gallery</h2><!-- /.footer-widget__title -->
                             <div class="footer-widget__gallery">
                                 <a href="gallery-carousel.html" class="footer-widget__gallery__link">
                                     <img src="assets/images/gallery/footer-widget-gallery-1.jpg"
@@ -431,7 +469,7 @@
             <div class="container">
                 <div class="main-footer__bottom__inner">
                     <p class="main-footer__copyright">
-                        &copy; Copyright <span class="dynamic-year"></span> by Meat House .
+                        &copy; Copyright <span class="dynamic-year"></span> <span data-i18n="byMeatHouse">by Meat House</span> .
                     </p>
                 </div><!-- /.main-footer__inner -->
             </div><!-- /.container -->
@@ -465,7 +503,7 @@
 </div>
 
 <a href="contact.html#" data-target="html" class="scroll-to-target scroll-to-top">
-    <span class="scroll-to-top__text">back top</span>
+    <span class="scroll-to-top__text" data-i18n="backTop">back top</span>
     <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
 </a>
 
@@ -492,6 +530,126 @@
 <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
 <!-- template js -->
 <script src="assets/js/boskery.js"></script>
+<script>
+    const translations = {
+        en: {
+            home: "Home",
+            aboutUs: "About Us",
+            contactUs: "Contact Us",
+            gallery: "Gallery",
+            callAnytime: "Call Anytime",
+            downloadNow: "Download Now",
+            titleContact: "Contact Us || Boskery || HTML Template For Butcher & Meat",
+            contactPageTitle: "Contact Us",
+            getInTouch: "Get In Touch",
+            getInTouchText: "We would love to hear from you. Please fill out the form below.",
+            yourName: "Your Name",
+            yourEmail: "Your Email",
+            writeMessage: "Write Message . .",
+            sendMessage: "send message",
+            welcomeToVisit: "You’re always welcome to visit us",
+            staffHappy: "Our friendly staff will be happy to assist you with any questions or concerns you may have.",
+            callNow: "call now",
+            telegram: "Telegram",
+            address: "address",
+            businessHours: "Our business hours",
+            monday: "Monday",
+            tuesday: "Tuesday",
+            wednesday: "Wednesday",
+            thursday: "Thursday",
+            friday: "Friday",
+            saturday: "Saturday",
+            sunday: "Sunday",
+            footerAboutText: "Providing fresh and organic meat from our farm in a very hygienic way.",
+            playStore: "Play Store",
+            contact: "Contact",
+            contactHeading: "Contact",
+            galleryHeading: "Gallery",
+            byMeatHouse: "by Meat House",
+            backTop: "back top",
+            searchHere: "Search Here...",
+            newsletter: "Newsletter",
+            emailAddress: "Email Address"
+        },
+        uz: {
+            home: "Bosh sahifa",
+            aboutUs: "Biz haqida",
+            contactUs: "Biz bilan bog'lanish",
+            gallery: "Galereya",
+            callAnytime: "Istalgan vaqtda qo'ng'iroq qiling",
+            downloadNow: "Hozir yuklab olish",
+            titleContact: "Biz bilan bog'lanish || Boskery || Qassob va go'sht uchun HTML shabloni",
+            contactPageTitle: "Biz bilan bog'lanish",
+            getInTouch: "Bog'lanish",
+            getInTouchText: "Sizdan xabar olishdan xursandmiz. Iltimos, quyidagi shaklni to'ldiring.",
+            yourName: "Ismingiz",
+            yourEmail: "Elektron pochtangiz",
+            writeMessage: "Xabar yozing...",
+            sendMessage: "xabar yuborish",
+            welcomeToVisit: "Bizga tashrif buyurishingizdan doim mamnunmiz",
+            staffHappy: "Do'stona xodimlarimiz sizning har qanday savol yoki muammolaringiz bo'yicha yordam berishdan xursand bo'lishadi.",
+            callNow: "hoziroq qo'ng'iroq qiling",
+            telegram: "Telegram",
+            address: "manzil",
+            businessHours: "Ish vaqtimiz",
+            monday: "Dushanba",
+            tuesday: "Seshanba",
+            wednesday: "Chorshanba",
+            thursday: "Payshanba",
+            friday: "Juma",
+            saturday: "Shanba",
+            sunday: "Yakshanba",
+            footerAboutText: "Fermamizdan juda gigiyenik usulda yangi va organik go'sht yetkazib berish.",
+            playStore: "Play Do'kon",
+            contact: "Bog'lanish",
+            contactHeading: "Bog'lanish",
+            galleryHeading: "Galereya",
+            byMeatHouse: "Meat House tomonidan",
+            backTop: "Yuqoriga",
+            searchHere: "Qidiruv...",
+            newsletter: "Yangiliklar",
+            emailAddress: "Elektron pochta"
+        }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+
+        // Update text content
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+
+        // Update placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[lang][key]) {
+                el.placeholder = translations[lang][key];
+            }
+        });
+
+        // Update title
+        const titleKey = document.querySelector('title')?.getAttribute('data-i18n');
+        if (titleKey && translations[lang][titleKey]) {
+            document.title = translations[lang][titleKey];
+        }
+
+        document.getElementById('langBtnEn').classList.toggle('active', lang === 'en');
+        document.getElementById('langBtnUz').classList.toggle('active', lang === 'uz');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setLanguage(currentLang);
+        document.getElementById('langBtnEn').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('langBtnUz').addEventListener('click', () => setLanguage('uz'));
+    });
+</script>
 </body>
 
 </html>

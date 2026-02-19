@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Gallery</title>
+    <title data-i18n="titleGallery">Gallery Carousel || Boskery || HTML Template For Butcher & Meat</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/word_mark_logo.svg"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/word_mark_logo.svg"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/word_mark_logo.svg"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png"/>
     <link rel="manifest" href="assets/images/favicons/site.webmanifest"/>
     <meta name="description"
           content="Boskery is a modern butcher & meat shop HTML5 Template. We specially build this template for all food and meat online store. It is also perfect for the meat shop, chicken shop, mutton shop, fish, sea food, butcher steak house, raw meat shop, vegetable shop and all other meat shops."/>
@@ -39,6 +39,34 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/boskery.css"/>
+
+    <!-- Language Switcher Styles -->
+    <style>
+        .lang-switcher {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .lang-switcher button {
+            padding: 5px 12px;
+            border: 1px solid #ddd;
+            background: transparent;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .lang-switcher button.active {
+            background: #d4302d;
+            color: white;
+            border-color: #d4302d;
+        }
+        .lang-switcher button:hover {
+            background: #d4302d;
+            color: white;
+            border-color: #d4302d;
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -47,7 +75,7 @@
 <div class="custom-cursor__cursor-two"></div>
 
 <div class="preloader">
-    <div class="preloader__image" style="background-image: url(assets/images/word_mark_logo_2.svg);"></div>
+    <div class="preloader__image" style="background-image: url(assets/images/word_mark_logo_2_small.svg);"></div>
 </div>
 <!-- /.preloader -->
 <div class="page-wrapper">
@@ -66,17 +94,17 @@
                                 <ul class="main-menu__list">
 
                                     <li class="dropdown megamenu">
-                                        <a href="index.html">Home</a>
+                                        <a href="index.html" data-i18n="home">Home</a>
                                     </li>
 
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <a href="about.html" data-i18n="aboutUs">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact Us</a>
+                                        <a href="contact.html" data-i18n="contactUs">Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="gallery-carousel.html">Gallery</a>
+                                        <a href="gallery-carousel.html" data-i18n="gallery">Gallery</a>
                                     </li>
                                 </ul>
                             </nav><!-- /.main-header__nav -->
@@ -87,10 +115,20 @@
                                 <span></span>
                                 <span></span>
                             </div><!-- /.mobile-nav__toggler -->
+                            <div class="lang-switcher">
+                                <button id="langBtnEn" class="active">EN</button>
+                                <button id="langBtnUz">UZ</button>
+
+                                <br>
+                                <br>
+                            </div><!-- /.lang-switcher -->
+
                             <div class="main-header__call">
+                                <br>
+
                                 <span class="main-header__call__icon icon-mobile"></span>
                                 <div class="main-header__call__inner">
-                                    <span class="main-header__call__tagline">Call Anytime</span>
+                                    <span class="main-header__call__tagline" data-i18n="callAnytime">Call Anytime</span>
                                     <a href="tel:+821082686556" class="main-header__call__number">+821082686556</a>
                                     <!-- /.main-header__call__number -->
                                 </div><!-- /.main-header__call__inner -->
@@ -104,7 +142,7 @@
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
-                                <span class="boskery-btn__text">Download Now</span>
+                                <span class="boskery-btn__text" data-i18n="downloadNow">Download Now</span>
                                 <i class="icon-meat-3"></i>
                             </a><!-- /.thm-btn main-header__btn -->
                         </div><!-- /.main-header__right__right -->
@@ -117,10 +155,10 @@
         <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);"></div>
         <!-- /.page-header__bg -->
         <div class="container">
-            <h2 class="page-header__title">Gallery carousel</h2>
+            <h2 class="page-header__title" data-i18n="galleryTitle">Gallery carousel</h2>
             <ul class="boskery-breadcrumb list-unstyled">
-                <li><a href="index.html">Home</a></li>
-                <li><span>our gallery</span></li>
+                <li><a href="index.html" data-i18n="home">Home</a></li>
+                <li><span data-i18n="ourGallery">our gallery</span></li>
             </ul><!-- /.thm-breadcrumb list-unstyled -->
         </div><!-- /.container -->
     </section><!-- /.page-header -->
@@ -265,7 +303,7 @@
                 <div class="row gutter-y-50">
                     <div class="col-lg-5 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
                         <div class="footer-widget footer-widget--about">
-                            <h2 class="footer-widget__title">Providing fresh and organic meat from our farm in a very
+                            <h2 class="footer-widget__title" data-i18n="footerAboutText">Providing fresh and organic meat from our farm in a very
                                 hygienic way.</h2><!-- /.footer-widget__title -->
                             <a href="contact.html" class="boskery-btn">
                                 <span class="boskery-btn__hover"></span>
@@ -274,7 +312,7 @@
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
                                 <span class="boskery-btn__hover"></span>
-                                <span class="boskery-btn__text">Contact Us</span>
+                                <span class="boskery-btn__text" data-i18n="contactUs">Contact Us</span>
                                 <i class="icon-meat-3"></i>
                             </a><!-- /.boskery-btn -->
                         </div><!-- /.footer-widget -->
@@ -283,17 +321,17 @@
                          data-wow-delay="200ms">
                         <div class="footer-widget footer-widget--links">
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="t.me/meat_housekr">Telegram</a></li>
-                                <li><a href="https://play.google.com/store/app/details?id=com.saikou.meathouse">Play
+                                <li><a href="t.me/meat_housekr" data-i18n="telegram">Telegram</a></li>
+                                <li><a href="https://play.google.com/store/app/details?id=com.saikou.meathouse" data-i18n="playStore">Play
                                     Store</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-lg-3 col-md-3 col-xl-2 -->
                     <div class="col-lg-4 col-md-5 col-xl-4 wow fadeInUp" data-wow-duration="1500ms"
                          data-wow-delay="400ms">
                         <div class="footer-widget footer-widget--contact">
-                            <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title" data-i18n="contactHeading">Contact</h2><!-- /.footer-widget__title -->
                             <div class="footer-widget__contact">
                                 <address class="footer-widget__address">경북 경산시 하양읍 금송로 12</address>
                                 <!-- /.footer-widget__address -->
@@ -321,7 +359,7 @@
                     <div class="col-lg-5 col-md-4 col-sm-8 col-xl-3 wow fadeInUp" data-wow-duration="1500ms"
                          data-wow-delay="600ms">
                         <div class="footer-widget footer-widget--gallery">
-                            <h2 class="footer-widget__title">Gallery</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title" data-i18n="galleryHeading">Gallery</h2><!-- /.footer-widget__title -->
                             <div class="footer-widget__gallery">
                                 <a href="gallery-carousel.html" class="footer-widget__gallery__link">
                                     <img src="assets/images/gallery/footer-widget-gallery-1.jpg"
@@ -363,7 +401,7 @@
             <div class="container">
                 <div class="main-footer__bottom__inner">
                     <p class="main-footer__copyright">
-                        &copy; Copyright <span class="dynamic-year"></span> by Meat House .
+                        &copy; Copyright <span class="dynamic-year"></span> <span data-i18n="byMeatHouse">by Meat House</span> .
                     </p>
                 </div><!-- /.main-footer__inner -->
             </div><!-- /.container -->
@@ -423,7 +461,7 @@
     <!-- /.search-popup__overlay -->
     <div class="search-popup__content">
         <form role="search" method="get" class="search-popup__form" action="gallery-carousel.html#">
-            <input type="text" id="search" placeholder="Search Here..."/>
+            <input type="text" id="search" placeholder="Search Here..." data-i18n-placeholder="searchHere"/>
             <button type="submit" aria-label="search submit" class="boskery-btn">
                 <span class="boskery-btn__hover"></span>
                 <span class="boskery-btn__hover"></span>
@@ -447,11 +485,11 @@
                                                               alt="logo"/></a>
         </div><!-- /.sidebar-one__logo -->
         <div class="sidebar-one__about sidebar-one__item">
-            <p class="sidebar-one__about__text">Providing fresh and organic meat from our farm in a very hygienic way.
+            <p class="sidebar-one__about__text" data-i18n="footerAboutText">Providing fresh and organic meat from our farm in a very hygienic way.
             </p>
         </div><!-- /.sidebar-one__about -->
         <div class="sidebar-one__info sidebar-one__item">
-            <h4 class="sidebar-one__title">Contact</h4>
+            <h4 class="sidebar-one__title" data-i18n="contactHeading">Contact</h4>
             <ul class="sidebar-one__info__list">
                 <li><span class="icon-maps-and-flags"></span>
                     <address>85 Ketch Harbour Road
@@ -482,11 +520,11 @@
             </a>
         </div><!-- /sidebar-one__social -->
         <div class="sidebar-one__newsletter sidebar-one__item">
-            <label class="sidebar-one__title" for="sidebar-email">Newsletter</label>
+            <label class="sidebar-one__title" for="sidebar-email" data-i18n="newsletter">Newsletter</label>
             <form action="gallery-carousel.html#" class="sidebar-one__newsletter__inner mc-form"
                   data-url="MAILCHIMP_FORM_URL">
                 <input type="email" name="EMAIL" id="sidebar-email" class="sidebar-one__newsletter__input"
-                       placeholder="Email Address">
+                       placeholder="Email Address" data-i18n-placeholder="emailAddress">
                 <button type="submit" class="sidebar-one__newsletter__btn"><span class="icon-email"
                                                                                  aria-hidden="true"></span></button>
             </form>
@@ -496,7 +534,7 @@
 </aside><!-- /.sidebar-one -->
 
 <a href="gallery-carousel.html#" data-target="html" class="scroll-to-target scroll-to-top">
-    <span class="scroll-to-top__text">back top</span>
+    <span class="scroll-to-top__text" data-i18n="backTop">back top</span>
     <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
 </a>
 
@@ -523,6 +561,92 @@
 <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
 <!-- template js -->
 <script src="assets/js/boskery.js"></script>
+<script>
+    const translations = {
+        en: {
+            home: "Home",
+            aboutUs: "About Us",
+            contactUs: "Contact Us",
+            gallery: "Gallery",
+            callAnytime: "Call Anytime",
+            downloadNow: "Download Now",
+            titleGallery: "Gallery Carousel || Boskery || HTML Template For Butcher & Meat",
+            galleryTitle: "Gallery carousel",
+            ourGallery: "our gallery",
+            footerAboutText: "Providing fresh and organic meat from our farm in a very hygienic way.",
+            telegram: "Telegram",
+            playStore: "Play Store",
+            contact: "Contact",
+            contactHeading: "Contact",
+            galleryHeading: "Gallery",
+            byMeatHouse: "by Meat House",
+            searchHere: "Search Here...",
+            newsletter: "Newsletter",
+            emailAddress: "Email Address",
+            backTop: "back top"
+        },
+        uz: {
+            home: "Bosh sahifa",
+            aboutUs: "Biz haqida",
+            contactUs: "Biz bilan bog'lanish",
+            gallery: "Galereya",
+            callAnytime: "Istalgan vaqtda qo'ng'iroq qiling",
+            downloadNow: "Hozir yuklab olish",
+            titleGallery: "Galereya karuseli || Boskery || Qassob va go'sht uchun HTML shabloni",
+            galleryTitle: "Galereya karuseli",
+            ourGallery: "bizning galereya",
+            footerAboutText: "Fermamizdan juda gigiyenik usulda yangi va organik go'sht yetkazib berish.",
+            telegram: "Telegram",
+            playStore: "Play Do'kon",
+            contact: "Bog'lanish",
+            contactHeading: "Bog'lanish",
+            galleryHeading: "Galereya",
+            byMeatHouse: "Meat House tomonidan",
+            searchHere: "Qidiruv...",
+            newsletter: "Yangiliklar",
+            emailAddress: "Elektron pochta",
+            backTop: "Yuqoriga"
+        }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('lang', lang);
+
+        // Update text content
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+
+        // Update placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[lang][key]) {
+                el.placeholder = translations[lang][key];
+            }
+        });
+
+        // Update title
+        const titleKey = document.querySelector('title')?.getAttribute('data-i18n');
+        if (titleKey && translations[lang][titleKey]) {
+            document.title = translations[lang][titleKey];
+        }
+
+        document.getElementById('langBtnEn').classList.toggle('active', lang === 'en');
+        document.getElementById('langBtnUz').classList.toggle('active', lang === 'uz');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setLanguage(currentLang);
+        document.getElementById('langBtnEn').addEventListener('click', () => setLanguage('en'));
+        document.getElementById('langBtnUz').addEventListener('click', () => setLanguage('uz'));
+    });
+</script>
 </body>
 
 </html>
